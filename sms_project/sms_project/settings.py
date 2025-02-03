@@ -1,4 +1,13 @@
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+#-----Twilio Configuration
+TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
+TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
