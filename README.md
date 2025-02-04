@@ -58,6 +58,7 @@ Twilio is a powerful cloud communication platform that allows sending SMS from D
             return f"{self.name}-{self.score}"
     ```
     > We can send sms from different way and different file. Here i implemented the sms sending method inside the `models.py` file. Because of I want when a student score entired that time check the score and sent the message. That's why i implemented it inside the models.py file. Also i doesn't used any view function. I tested it from the django admin.
+    
 - Now create a `sms_send()` function and custom `save()` function inside the model class. Structure like this:
     ```python
     class ResultModel():
